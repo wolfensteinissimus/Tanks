@@ -5,10 +5,10 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class Sprite {
-    private SpriteSheet sheet;
+    private Graphics.SpriteSheet sheet;
     private float scale;
 
-    public Sprite(SpriteSheet sheet , float scale){
+    public Sprite(Graphics.SpriteSheet sheet , float scale){
         this.sheet = sheet;
         this.scale = scale;
 
