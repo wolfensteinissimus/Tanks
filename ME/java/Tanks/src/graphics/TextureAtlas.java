@@ -1,7 +1,7 @@
-package Graphics;
+package graphics;
 
 
-import Utils.ResLoader;
+import utils.ResLoader;
 
 import java.awt.image.BufferedImage;
 

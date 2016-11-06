@@ -1,6 +1,6 @@
 package main;
 
-import Game.Game;
+import game.Game;
 
 
 

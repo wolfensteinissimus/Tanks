@@ -1,13 +1,12 @@
-package Game;
+package game;
 
 
 import io.Input;
 import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
-import Graphics.TextureAtlas;
+import graphics.TextureAtlas;
 
 
 public class Player extends Entity

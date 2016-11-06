@@ -1,13 +1,13 @@
-package Game;
+package game;
 
 
-import Utils.Time;
+import utils.Time;
 import display.Display.Display;
 import io.Input;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import Graphics.TextureAtlas;
+import graphics.TextureAtlas;
 
 
 public class Game implements Runnable
