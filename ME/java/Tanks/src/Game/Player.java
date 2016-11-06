@@ -7,6 +7,7 @@ import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
+import Graphics.TextureAtlas;
 
 
 public class Player extends Entity
@@ -32,7 +33,7 @@ public class Player extends Entity
 
         }
 
-        protected BufferedImage texture(Graphics.TextureAtlas atlas)
+        protected BufferedImage texture(TextureAtlas atlas)
         {
              return atlas.cut(x, y , w, h);
         }
@@ -43,7 +44,7 @@ public class Player extends Entity
     private float scale;
     private float speed;
 
-    protected Player(float x , float y, float scale, Graphics.TextureAtlas atlas)
+    protected Player(float x , float y, float scale, TextureAtlas atlas)
     {
         super(EntityType.Player, x , y);
 
@@ -54,7 +55,7 @@ public class Player extends Entity
 
         for (Heading h : Heading.values())
         {
-            Graphics.SpriteSheet sheet = new Graphics.SpriteSheet(h.texture(atlas), 1 , SPRITE_PER_HEADING, SPRITE_SCALE);
+            SpriteSheet sheet = new SpriteSheet(h.texture(atlas), 1 ,SPRITE_SCALE);
             Sprite sprite = new Sprite(sheet,scale);
             spriteMap.put(h, sprite);
         }
@@ -66,9 +67,7 @@ public class Player extends Entity
         float newX = x;
         float newY = y;
 
-        if(input.getKey(KeyEvent.VK_UP)){
-            newY -=
-        }
+
     }
 
     @Override

@@ -29,8 +29,8 @@ public class Game implements Runnable
     private Graphics2D graphics;
     private Input input;
     private TextureAtlas atlas;
-    private Graphics.SpriteSheet sheet;
-    private Graphics.Sprite sprite;
+    private SpriteSheet sheet;
+    private Sprite sprite;
 
     float x = 350;
     float y = 250;
@@ -46,8 +46,8 @@ public class Game implements Runnable
         input = new Input();
         Display.addInputListener(input);
         atlas = new TextureAtlas(ATLAS_FILE_NAME);
-        sheet = new Graphics.SpriteSheet(atlas.cut(8 * 16, 5 * 16, 16 * 2, 16), 2, 16);
-        sprite = new Graphics.Sprite(sheet, 1);
+        sheet = new SpriteSheet(atlas.cut(8 * 16, 5 * 16, 16 * 2, 16), 2, 16);
+        sprite = new Sprite(sheet, 1);
     }
 
 
