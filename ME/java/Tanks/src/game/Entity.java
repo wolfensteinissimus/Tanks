@@ -19,7 +19,7 @@ public abstract class Entity
 
     }
 
-    protected abstract void update(Input input);
+    public abstract void update(Input input);
 
-    protected abstract void render(Graphics2D g);
+    public abstract void render(Graphics2D g);
 }
