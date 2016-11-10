@@ -27,7 +27,7 @@ public class Input extends JComponent
             });
 
             getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(i, 0, true), i * 2 + 1);
-            getActionMap().put(i * 2, new AbstractAction() {
+            getActionMap().put(i * 2 + 1, new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent actionEvent) {
                     map[KEY_CODE] = false;
